@@ -62,12 +62,81 @@ body {
     padding: 0.5rem 0;
 }
 
-.header__nav a:hover,
-.header__nav .active a {
-    color: var(--primary);
-}
+    .header__nav a:hover,
+    .header__nav .active a {
+        color: var(--primary);
+    }
 
-/* Hero contact harmonisé */
+    /* Menu burger pour mobile */
+    .header__burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: absolute;
+        right: 2rem;
+        z-index: 101;
+    }
+
+    .header__burger span {
+        width: 25px;
+        height: 3px;
+        background: var(--text);
+        margin: 3px 0;
+        transition: all 0.3s ease;
+        border-radius: 3px;
+    }
+
+    .header__burger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .header__burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header__burger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    @media (max-width: 768px) {
+        .header__burger {
+            display: flex;
+        }
+
+        .header__nav ul {
+            position: fixed;
+            top: 64px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 64px);
+            background: var(--white);
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 2rem;
+            gap: 2rem;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header__nav ul.open {
+            transform: translateX(0);
+        }
+
+        .header__nav li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .header__nav a {
+            display: block;
+            padding: 1rem;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }/* Hero contact harmonisé */
 .contact-hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
