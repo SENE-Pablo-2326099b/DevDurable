@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="interactive-map">
                 <div class="map-placeholder">
                     <div class="map-pin">📍</div>
-                    <p>123 Rue de l'Écologie<br>75000 Paris</p>
+                    <p>A définir<br>13120 Gardanne</p>
                     <button class="map-btn" onclick="openMaps()">Ouvrir dans Maps</button>
                 </div>
             </div>
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Fonction globale pour ouvrir Maps
     window.openMaps = function() {
-        window.open('https://maps.google.com/?q=123+Rue+de+l\'Écologie+Paris', '_blank');
+        window.open('https://www.google.fr/maps/place/13120+Gardanne/@43.4585656,5.4444691,13z/data=!3m1!4b1!4m6!3m5!1s0x12c9917b2992420d:0x40819a5fd970300!8m2!3d43.4525982!4d5.4717363!16s%2Fm%2F02r1_hd?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D', '_blank');
     };
     
     // ========================================
