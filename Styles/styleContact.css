@@ -136,7 +136,9 @@ body {
             font-size: 1.2rem;
             width: 100%;
         }
-    }/* Hero contact harmonisé */
+    }
+
+/* Hero contact harmonisé */
 .contact-hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
@@ -560,6 +562,14 @@ body {
     .header__logo {
         left: 1rem;
         font-size: 1.1rem;
+    }
+    
+    .header__burger {
+        right: 1rem;
+    }
+    
+    .header__nav ul.open {
+        top: 60px;
     }
     
     .header__nav ul {

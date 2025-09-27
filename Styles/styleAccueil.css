@@ -136,7 +136,9 @@ body {
             font-size: 1.2rem;
             width: 100%;
         }
-    }/* Hero harmonisé avec taille standard */
+    }
+
+/* Hero harmonisé avec taille standard */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: var(--white);
@@ -491,9 +493,17 @@ body {
         font-size: 1.1rem;
     }
     
+    .header__burger {
+        right: 1rem;
+    }
+    
     .header__nav ul {
         gap: 1rem;
         font-size: 0.9rem;
+    }
+    
+    .header__nav ul.open {
+        top: 60px;
     }
     
     body {
