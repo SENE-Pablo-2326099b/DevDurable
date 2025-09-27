@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les P'tits Écolos - Petit Électroménager Reconditionné</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleContact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header harmonisé -->
+    <header class="header" role="banner">
+        <div class="header__logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <circle cx="16" cy="16" r="14" fill="#2E7D32"/>
+                <text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial">RE</text>
+            </svg>
+            <span>Les P'tits Écolos</span>
+        </div>
+        <nav class="header__nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Contact -->
+    <section class="contact-hero">
+        <h1>Contactez-nous</h1>
+        <p>Une question sur nos appareils reconditionnés ? Envie de participer à nos ateliers ? Contactez notre équipe !</p>
+    </section>
+
+    <div class="container">
+        <!-- Contact principal -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Nos coordonnées</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h3>Adresse</h3>
+                        <p>A définir<br>Gardanne 13120</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-details">
+                        <h3>Téléphone</h3>
+                        <p>04 78 XX XX XX</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-details">
+                        <h3>Email</h3>
+                        <p>contact@lesptitsecolos.fr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Objet</label>
+                        <select id="subject" name="subject">
+                            <option value="info">Demande d'information</option>
+                            <option value="electromenager">Question sur l'électroménager</option>
+                            <option value="atelier">Inscription à un atelier</option>
+                            <option value="don">Don d'appareils</option>
+                            <option value="reparation">Demande de réparation</option>
+                            <option value="boutique">Question boutique</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Envoyer le message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Horaires -->
+        <section class="horaires">
+            <h2>Nos horaires d'ouverture</h2>
+            <div class="horaires-grid">
+                <div>
+                    <h3>Boutique & Collecte</h3>
+                    <div class="horaire-item">
+                        <span class="jour">Lundi</span>
+                        <span class="heure">Fermé</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Mardi - Vendredi</span>
+                        <span class="heure">9h00 - 18h00</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Samedi</span>
+                        <span class="heure">9h00 - 17h00</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Dimanche</span>
+                        <span class="heure">10h00 - 16h00</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ateliers & Formations</h3>
+                    <div class="horaire-item">
+                        <span class="jour">Repair Café</span>
+                        <span class="heure">Samedi 14h-17h</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Atelier Couture</span>
+                        <span class="heure">Mercredi 18h-20h</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Formation Électro</span>
+                        <span class="heure">Sur rendez-vous</span>
+                    </div>
+                    <div class="horaire-item">
+                        <span class="jour">Sensibilisation</span>
+                        <span class="heure">Jeudi 19h-21h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services">
+            <h2>Nos services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Réparation</h3>
+                    <p>Diagnostic et réparation de votre petit électroménager par nos experts</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Collecte</h3>
+                    <p>Récupération gratuite de vos appareils défaillants à domicile ou en boutique</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Formation</h3>
+                    <p>Ateliers pour apprendre à réparer et entretenir vos appareils vous-même</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Valorisation</h3>
+                    <p>Transformation de vos anciens appareils en matériaux réutilisables</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Sensibilisation</h3>
+                    <p>Actions pédagogiques sur l'économie circulaire et la réduction des déchets</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Solidarité</h3>
+                    <p>Accès facilité aux appareils reconditionnés pour les foyers en difficulté</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Ressourcerie Éco-Électro. Tous droits réservés. | Ensemble, construisons une cuisine durable et accessible.</p>
+    </footer>
+    
+    <script src="../JS/contact.js"></script>
+</body>
+</html>
