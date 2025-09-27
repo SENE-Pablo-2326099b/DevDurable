@@ -1,0 +1,578 @@
+/* Variables harmonisées - Palette écologique */
+:root {
+  --primary: #2E7D32;     /* Vert foncé principal */
+  --secondary: #4CAF50;   /* Vert clair */
+  --accent: #81C784;      /* Vert doux */
+  --neutral: #F5F5F5;     /* Gris très clair */
+  --warm: #D7CCC8;        /* Beige chaleureux */
+  --text: #2E2E2E;        /* Gris foncé */
+  --white: #FFFFFF;
+  --btn-radius: 24px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  background: var(--neutral);
+  color: var(--text);
+  padding-top: 64px;
+  line-height: 1.6;
+}
+
+/* Header uniforme comme products.html */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 0 2rem;
+}
+
+.header__logo {
+  position: absolute;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.header__nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0.5rem 0;
+}
+
+.header__nav a:hover,
+.header__nav .active a {
+  color: var(--primary);
+}
+
+/* Hero harmonisé avec taille standard */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Boutons harmonisés */
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn--secondary:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/* Sections harmonisées */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* Missions */
+.missions {
+  background: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mission-card {
+  background: var(--neutral);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-4px);
+}
+
+.mission-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.mission-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Produits */
+.produits {
+  background: var(--white);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: var(--neutral);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  height: 200px;
+  background: var(--warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--secondary);
+  color: var(--white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.product-content {
+  padding: 1.5rem;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.product-prices {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.new-price {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Animations JavaScript */
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+.reveal {
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filter-animate {
+    animation: filterIn 0.5s ease-out forwards;
+}
+
+@keyframes filterIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styles pour les formulaires avec validation */
+.form-group input.error,
+.form-group textarea.error,
+.form-group select.error {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+    animation: shake 0.5s ease-in-out;
+}
+
+.form-group input.success,
+.form-group textarea.success,
+.form-group select.success {
+    border-color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Effet de parallaxe */
+.hero, .contact-hero, .ateliers-hero, .boutique-hero {
+    transition: transform 0.1s ease-out;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN COMPLET
+   ======================================== */
+
+/* Très grandes écrans (1440px et plus) */
+@media (min-width: 1440px) {
+    .section {
+        max-width: 1400px;
+    }
+    
+    .missions {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Écrans larges (1200px à 1439px) */
+@media (max-width: 1439px) {
+    .section {
+        max-width: 1200px;
+    }
+}
+
+/* Tablettes en mode paysage (992px à 1199px) */
+@media (max-width: 1199px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .missions {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Tablettes en mode portrait (768px à 991px) */
+@media (max-width: 991px) {
+    .hero__actions {
+        gap: 1rem;
+    }
+    
+    .btn {
+        min-width: 180px;
+    }
+    
+    .missions {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mission-card {
+        padding: 1.5rem;
+    }
+    
+    .product-content {
+        padding: 1.2rem;
+    }
+}
+
+/* Mobile large (576px à 767px) */
+@media (max-width: 767px) {
+    .header {
+        padding: 0 1rem;
+        height: 60px;
+    }
+    
+    .header__logo {
+        left: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .header__nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+    
+    .hero {
+        padding: 3rem 1rem 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .missions {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .mission-card {
+        padding: 1.5rem;
+        text-align: center;
+    }
+    
+    .mission-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .mission-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+    
+    .product-content {
+        padding: 1.2rem;
+    }
+    
+    .product-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile petit (jusqu'à 575px) */
+@media (max-width: 575px) {
+    .header__nav ul {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .hero {
+        padding: 2rem 0.8rem 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+    
+    .hero p {
+        font-size: 0.95rem;
+    }
+    
+    .section {
+        padding: 2rem 0.8rem;
+    }
+    
+    .section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .mission-card {
+        padding: 1.2rem;
+    }
+    
+    .mission-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .product-image {
+        height: 160px;
+    }
+    
+    .product-content {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Amélioration pour les très petits écrans (320px) */
+@media (max-width: 374px) {
+    .header__logo span {
+        display: none;
+    }
+    
+    .header__nav ul {
+        gap: 0.3rem;
+        font-size: 0.75rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .mission-card h3 {
+        font-size: 1rem;
+    }
+}

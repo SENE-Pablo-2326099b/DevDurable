@@ -1,0 +1,711 @@
+/* Variables harmonisées - Palette écologique */
+:root {
+    --primary: #2E7D32;     /* Vert foncé principal */
+    --secondary: #4CAF50;   /* Vert clair */
+    --accent: #81C784;      /* Vert doux */
+    --neutral: #F5F5F5;     /* Gris très clair */
+    --warm: #D7CCC8;        /* Beige chaleureux */
+    --text: #2E2E2E;        /* Gris foncé */
+    --white: #FFFFFF;
+    --btn-radius: 24px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    background: var(--neutral);
+    color: var(--text);
+    padding-top: 64px;
+    line-height: 1.6;
+}
+
+/* Header uniforme */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 0 2rem;
+}
+
+.header__logo {
+    position: absolute;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.header__nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.5rem 0;
+}
+
+.header__nav a:hover,
+.header__nav .active a {
+    color: var(--primary);
+}
+
+/* Hero contact harmonisé */
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    font-weight: 700;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+/* Section contact */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 3rem 0;
+}
+
+.contact-info {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    animation: slideInLeft 0.6s ease-out;
+}
+
+.contact-info h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: var(--neutral);
+    transform: translateX(5px);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-details h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.info-details p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contact-form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    animation: slideInRight 0.6s ease-out;
+}
+
+.contact-form h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: var(--neutral);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.1);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn--primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn--primary:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.2);
+}
+
+/* Horaires harmonisés */
+.horaires {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    margin-top: 2rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.horaires h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.horaires-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.horaires-grid > div h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.horaire-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--neutral);
+    transition: all 0.3s ease;
+}
+
+.horaire-item:hover {
+    background: var(--neutral);
+    padding-left: 1rem;
+    border-radius: 8px;
+}
+
+.horaire-item:last-child {
+    border-bottom: none;
+}
+
+.jour {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.heure {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Services harmonisés */
+.services {
+    margin: 3rem 0;
+    animation: fadeInUp 1s ease-out;
+}
+
+.services h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Footer harmonisé */
+.footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN COMPLET
+   ======================================== */
+
+/* Très grandes écrans (1440px et plus) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Écrans larges (1200px à 1439px) */
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Tablettes en mode paysage (992px à 1199px) */
+@media (max-width: 1199px) {
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        padding: 0 1.5rem 4rem;
+    }
+    
+    .contact-section {
+        gap: 3rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Tablettes en mode portrait (768px à 991px) */
+@media (max-width: 991px) {
+    .contact-section {
+        gap: 2rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .info-item {
+        padding: 0.8rem;
+    }
+    
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .horaires {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile large (576px à 767px) */
+@media (max-width: 767px) {
+    .header {
+        padding: 0 1rem;
+        height: 60px;
+    }
+    
+    .header__logo {
+        left: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    .header__nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+    
+    .contact-hero {
+        padding: 3rem 1rem 2rem;
+    }
+    
+    .contact-hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .contact-hero p {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 1rem 3rem;
+    }
+    
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .info-icon {
+        margin: 0 auto 0.8rem;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .horaires {
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .horaires h2 {
+        font-size: 1.5rem;
+    }
+    
+    .horaires-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .services {
+        margin: 2rem 0;
+    }
+    
+    .services h2 {
+        font-size: 1.6rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile petit (jusqu'à 575px) */
+@media (max-width: 575px) {
+    .header__nav ul {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .contact-hero {
+        padding: 2rem 0.8rem 1.5rem;
+    }
+    
+    .contact-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .contact-hero p {
+        font-size: 0.95rem;
+    }
+    
+    .container {
+        padding: 0 0.8rem 2rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1.2rem;
+    }
+    
+    .contact-info h2,
+    .contact-form h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .info-item {
+        padding: 0.8rem;
+    }
+    
+    .info-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .info-details h3 {
+        font-size: 1rem;
+    }
+    
+    .info-details p {
+        font-size: 0.9rem;
+    }
+    
+    .horaires {
+        padding: 1.2rem;
+    }
+    
+    .horaires h2 {
+        font-size: 1.3rem;
+    }
+    
+    .horaire-item {
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .service-card {
+        padding: 1.2rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Amélioration pour les très petits écrans (320px) */
+@media (max-width: 374px) {
+    .header__logo span {
+        display: none;
+    }
+    
+    .header__nav ul {
+        gap: 0.3rem;
+        font-size: 0.75rem;
+    }
+    
+    .contact-hero h1 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-section {
+        gap: 1.5rem;
+    }
+    
+    .info-item {
+        padding: 0.6rem;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}

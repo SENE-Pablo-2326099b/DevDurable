@@ -2,229 +2,145 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ressourcerie Électro</title>
+    <title>Les P'tits Écolos - Petit Électroménager Reconditionné</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Styles/styleAccueil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header uniforme -->
     <header class="header" role="banner">
         <div class="header__logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="14" fill="#4F8A8B"/><text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial">RE</text></svg>
-            <span>Ressourcerie Électro</span>
+            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <circle cx="16" cy="16" r="14" fill="#2E7D32"/>
+                <text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial">RE</text>
+            </svg>
+            <span>Les P'tits Écolos</span>
         </div>
         <nav class="header__nav" aria-label="Navigation principale">
             <ul>
                 <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Ateliers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="header__icons">
-            <a href="#" aria-label="Mon compte"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="#4F8A8B"/><rect x="6" y="16" width="12" height="6" rx="3" fill="#4F8A8B"/></svg></a>
-            <a href="#" aria-label="Mon panier"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="10" rx="2" fill="#4F8A8B"/><circle cx="8" cy="19" r="2" fill="#4F8A8B"/><circle cx="16" cy="19" r="2" fill="#4F8A8B"/></svg></a>
-        </div>
-        <button class="header__burger" aria-label="Menu" aria-expanded="false" aria-controls="mainnav">
-            <span></span><span></span><span></span>
-        </button>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section harmonisée -->
     <section class="hero">
-    <h1>Bienvenue sur Ressourcerie Électro</h1>
-        <p class="hero__subtitle">Donnez une seconde vie à l’électronique, pour un futur plus durable et solidaire.</p>
-        <div class="hero__actions">
-            <a href="#" class="btn btn--primary">Découvrir les produits</a>
-            <a href="#" class="btn btn--secondary">Participer à un atelier</a>
+        <div class="hero__content">
+            <h1>Ressourcerie Solidaire Les P'tits Écolos</h1>
+            <p>Électroménager reconditionné à prix solidaire pour une cuisine durable et accessible à tous</p>
+            <div class="hero__actions">
+                <a href="products.html" class="btn btn--primary">Découvrir la boutique</a>
+                <a href="ateliers.html" class="btn btn--secondary">Participer aux ateliers</a>
+            </div>
         </div>
     </section>
 
-    <!-- Valeurs Section -->
-    <section class="valeurs">
-        <div class="valeurs__item">
-            <!-- Economique Icon -->
-            <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="15" width="20" height="10" rx="5" fill="#FFD166"/></svg>
-            <h3>Économique</h3>
-            <p>Des prix accessibles pour tous, grâce au reconditionnement et à la mutualisation des ressources.</p>
-        </div>
-        <div class="valeurs__item">
-            <!-- Ecologique Icon -->
-            <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="#06D6A0"/><path d="M20 10 L25 30 L15 30 Z" fill="#fff"/></svg>
-            <h3>Écologique</h3>
-            <p>Réduisez votre impact environnemental en prolongeant la vie des appareils électroniques.</p>
-        </div>
-        <div class="valeurs__item">
-            <!-- Solidaire Icon -->
-            <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="#EF476F"/><text x="20" y="26" text-anchor="middle" font-size="18" fill="#fff" font-family="Arial">♥</text></svg>
-            <h3>Solidaire</h3>
-            <p>Favorisez l’inclusion et le partage en soutenant des ateliers et des initiatives locales.</p>
+    <!-- Nos Missions -->
+    <section class="section">
+        <h2>Nos missions</h2>
+        <div class="missions">
+            <div class="mission-card">
+                <div class="mission-icon">🤝</div>
+                <h3>Solidarité</h3>
+                <p>Rendre l'électroménager accessible aux familles en difficulté grâce à nos prix solidaires et nos partenariats.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">🌱</div>
+                <h3>Écologie</h3>
+                <p>Réduire les déchets électroniques en donnant une seconde vie aux appareils par la réparation et le reconditionnement.</p>
+            </div>
+            <div class="mission-card">
+                <div class="mission-icon">♻️</div>
+                <h3>Économie circulaire</h3>
+                <p>Créer un circuit local de collecte, réparation et revente pour une consommation responsable et durable.</p>
+            </div>
         </div>
     </section>
 
     <!-- Produits Phares -->
-    <section class="produits">
-        <h2>Nos produits phares</h2>
+    <section class="section produits">
+        <h2>Nos appareils reconditionnés</h2>
         <div class="product-grid">
-            <div class="product">
-                <div class="product__banner">Reconditionné</div>
-                <img src="assets/iphone.jpg" alt="Produit 1">
-                <h4>Smartphone X</h4>
-                <div class="product__prices">
-                    <span class="old-price">299€</span>
-                    <span class="new-price">199€</span>
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">Prix solidaire</div>
+                    <span style="font-size: 3rem;">☕</span>
                 </div>
-                <a href="#" class="btn btn--details">Détails</a>
-            </div>
-            <div class="product">
-                <div class="product__banner">Reconditionné</div>
-                <img src="assets/ordi.jpg" alt="Produit 2">
-                <h4>Ordinateur Portable Y</h4>
-                <div class="product__prices">
-                    <span class="old-price">499€</span>
-                    <span class="new-price">349€</span>
+                <div class="product-content">
+                    <h3 class="product-title">Cafetière Senseo</h3>
+                    <div class="product-prices">
+                        <span class="old-price">89€</span>
+                        <span class="new-price">25€</span>
+                    </div>
+                    <a href="products.html" class="btn btn--primary">Voir détails</a>
                 </div>
-                <a href="#" class="btn btn--details">Détails</a>
             </div>
-            <div class="product">
-                <div class="product__banner">Reconditionné</div>
-                <img src="assets/tablette.jpg" alt="Produit 3">
-                <h4>Tablette Z</h4>
-                <div class="product__prices">
-                    <span class="old-price">199€</span>
-                    <span class="new-price">129€</span>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">Éco-responsable</div>
+                    <span style="font-size: 3rem;">🔥</span>
                 </div>
-                <a href="#" class="btn btn--details">Détails</a>
-            </div>
-            <div class="product">
-                <div class="product__banner">Reconditionné</div>
-                <img src="assets/casquez.jpg" alt="Produit 4">
-                <h4>Casque Audio W</h4>
-                <div class="product__prices">
-                    <span class="old-price">99€</span>
-                    <span class="new-price">59€</span>
+                <div class="product-content">
+                    <h3 class="product-title">Micro-ondes Samsung</h3>
+                    <div class="product-prices">
+                        <span class="old-price">129€</span>
+                        <span class="new-price">45€</span>
+                    </div>
+                    <a href="products.html" class="btn btn--primary">Voir détails</a>
                 </div>
-                <a href="#" class="btn btn--details">Détails</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Comment ça marche -->
-    <section class="process">
-        <h2>Comment ça marche ?</h2>
-        <div class="process__steps">
-            <div class="step">
-                <div class="step__number">1</div>
-                <div class="step__icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="4" fill="#FFD166"/></svg>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">Réparé</div>
+                    <span style="font-size: 3rem;">🍞</span>
                 </div>
-                <h4>Collecte</h4>
-                <p>Nous récupérons les appareils électroniques inutilisés auprès des particuliers et entreprises.</p>
-            </div>
-            <div class="step__arrow">
-                <svg width="32" height="32" viewBox="0 0 32 32"><path d="M8 16h16M20 12l4 4-4 4" stroke="#4F8A8B" stroke-width="2" fill="none"/></svg>
-            </div>
-            <div class="step">
-                <div class="step__number">2</div>
-                <div class="step__icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="#06D6A0"/></svg>
+                <div class="product-content">
+                    <h3 class="product-title">Grille-pain Vintage</h3>
+                    <div class="product-prices">
+                        <span class="old-price">65€</span>
+                        <span class="new-price">30€</span>
+                    </div>
+                    <a href="products.html" class="btn btn--primary">Voir détails</a>
                 </div>
-                <h4>Reconditionnement</h4>
-                <p>Nos experts vérifient, réparent et nettoient chaque appareil pour garantir sa qualité.</p>
             </div>
-            <div class="step__arrow">
-                <svg width="32" height="32" viewBox="0 0 32 32"><path d="M8 16h16M20 12l4 4-4 4" stroke="#4F8A8B" stroke-width="2" fill="none"/></svg>
-            </div>
-            <div class="step">
-                <div class="step__number">3</div>
-                <div class="step__icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="8" fill="#EF476F"/></svg>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="product-badge">Garanti</div>
+                    <span style="font-size: 3rem;">🥄</span>
                 </div>
-                <h4>Distribution</h4>
-                <p>Les produits reconditionnés sont proposés à la vente ou donnés lors d’ateliers solidaires.</p>
+                <div class="product-content">
+                    <h3 class="product-title">Robot Multifonction</h3>
+                    <div class="product-prices">
+                        <span class="old-price">199€</span>
+                        <span class="new-price">85€</span>
+                    </div>
+                    <a href="products.html" class="btn btn--primary">Voir détails</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Actualités / Ateliers -->
-    <section class="news-workshops">
-        <div class="news-workshops__workshops">
-            <h3>Ateliers à venir</h3>
-            <ul class="workshops__list">
-                <li>
-                    <span class="workshops__date">12/06</span>
-                    <span class="workshops__title">Atelier réparation smartphone</span>
-                </li>
-                <li>
-                    <span class="workshops__date">19/06</span>
-                    <span class="workshops__title">Initiation à l’électronique</span>
-                </li>
-            </ul>
-            <a href="#" class="btn btn--secondary">Voir tout</a>
-        </div>
-        <div class="news-workshops__news">
-            <h3>Actualités</h3>
-            <ul class="news__list">
-                <li>
-                    <span class="news__date">05/06</span>
-                    <span class="news__title">Nouveau partenariat local</span>
-                </li>
-                <li>
-                    <span class="news__date">01/06</span>
-                    <span class="news__title">Retour sur l’atelier du mois</span>
-                </li>
-            </ul>
-            <a href="#" class="btn btn--secondary">Voir tout</a>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta__content">
-            <h2>Rejoignez la communauté !</h2>
-            <p>Recevez nos actualités et offres spéciales par email.</p>
-            <form class="cta__form">
-                <input type="email" placeholder="Votre email" required aria-label="Votre email">
-                <button type="submit" class="btn btn--primary">S’inscrire</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__columns">
-            <div class="footer__logo">
-                <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="#4F8A8B"/><text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial">RE</text></svg>
-                <p>Ressourcerie Électro<br>Donner une seconde vie à l’électronique.</p>
+    <footer style="background: var(--primary); color: var(--white); padding: 3rem 2rem; text-align: center; margin-top: 4rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h3>Suivez-nous</h3>
+            <div style="display: flex; gap: 1rem; justify-content: center; margin: 1rem 0;">
+                <a href="#" style="color: var(--white); font-size: 1.5rem;">📘 Facebook</a>
+                <a href="#" style="color: var(--white); font-size: 1.5rem;">📷 Instagram</a>
+                <a href="#" style="color: var(--white); font-size: 1.5rem;">🎵 TikTok</a>
             </div>
-            <div class="footer__links">
-                <h4>Liens rapides</h4>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Ateliers</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer__contact">
-                <h4>Contact</h4>
-                <p>contact@ressourcerie-electro.fr<br>01 23 45 67 89</p>
-            </div>
-            <div class="footer__social">
-                <h4>Suivez-nous</h4>
-                <div class="social__icons">
-                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#4F8A8B"/><text x="12" y="16" text-anchor="middle" font-size="12" fill="#fff" font-family="Arial">f</text></svg></a>
-                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#4F8A8B"/><text x="12" y="16" text-anchor="middle" font-size="12" fill="#fff" font-family="Arial">t</text></svg></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bar">
-            <small>&copy; 2024 Ressourcerie Électro. Tous droits réservés.</small>
+            <p>&copy; 2024 Ressourcerie Éco-Électro. Ensemble pour une consommation solidaire et durable.</p>
         </div>
     </footer>
+
+    <script src="../JS/accueil.js"></script>
 </body>
-</html></div>
+</html>

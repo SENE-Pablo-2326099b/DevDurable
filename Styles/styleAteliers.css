@@ -1,0 +1,473 @@
+    :root {
+        --primary: #2E7D32;
+        --secondary: #4CAF50;
+        --accent: #81C784;
+        --neutral: #F5F5F5;
+        --warm: #D7CCC8;
+        --text: #2E2E2E;
+        --white: #FFFFFF;
+        --btn-radius: 24px;
+    }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        margin: 0;
+        background: var(--neutral);
+        color: var(--text);
+        padding-top: 64px;
+        line-height: 1.6;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background: var(--white);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        padding: 0 2rem;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: var(--primary);
+    }
+
+    .header__nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .header__nav a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .header__nav a:hover,
+    .header__nav .active a {
+        color: var(--primary);
+    }
+
+    .hero {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        color: var(--white);
+        padding: 4rem 2rem 3rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin: 0 0 1rem;
+        font-weight: 700;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem 4rem;
+    }
+
+    .ateliers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .atelier-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        transition: transform 0.3s ease;
+    }
+
+    .atelier-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .atelier-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .atelier-date {
+        background: var(--primary);
+        color: var(--white);
+        padding: 0.3rem 0.8rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: var(--btn-radius);
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .btn--primary {
+        background: var(--primary);
+        color: var(--white);
+    }
+
+    .btn--primary:hover {
+        background: var(--secondary);
+        transform: translateY(-2px);
+    }
+
+    .inscription-form {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        margin-top: 3rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--text);
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        padding: 0.8rem;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-family: inherit;
+        transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+    .footer {
+        background: var(--primary);
+        color: var(--white);
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+
+    /* Animations JavaScript */
+    @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        33% { transform: translateY(-10px) rotate(1deg); }
+        66% { transform: translateY(5px) rotate(-1deg); }
+    }
+
+    .reveal {
+        animation: slideInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Styles pour les formulaires avec validation */
+    .form-group input.error,
+    .form-group textarea.error,
+    .form-group select.error {
+        border-color: #ef4444;
+        background-color: #fef2f2;
+        animation: shake 0.5s ease-in-out;
+    }
+
+    .form-group input.success,
+    .form-group textarea.success,
+    .form-group select.success {
+        border-color: #22c55e;
+        background-color: #f0fdf4;
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+    }
+
+    /* Effet de parallaxe */
+    .ateliers-hero {
+        transition: transform 0.1s ease-out;
+    }
+
+    /* ========================================
+       RESPONSIVE DESIGN COMPLET
+       ======================================== */
+
+    /* Très grandes écrans (1440px et plus) */
+    @media (min-width: 1440px) {
+        .container {
+            max-width: 1400px;
+        }
+        
+        .ateliers-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    /* Écrans larges (1200px à 1439px) */
+    @media (max-width: 1439px) {
+        .container {
+            max-width: 1200px;
+        }
+    }
+
+    /* Tablettes en mode paysage (992px à 1199px) */
+    @media (max-width: 1199px) {
+        .hero h1 {
+            font-size: 2.2rem;
+        }
+        
+        .container {
+            padding: 0 1.5rem 4rem;
+        }
+        
+        .ateliers-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .inscription-form {
+            padding: 1.5rem;
+        }
+    }
+
+    /* Tablettes en mode portrait (768px à 991px) */
+    @media (max-width: 991px) {
+        .atelier-card {
+            padding: 1.5rem;
+        }
+        
+        .atelier-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.3rem;
+        }
+        
+        .inscription-form {
+            margin-top: 2rem;
+        }
+    }
+
+    /* Mobile large (576px à 767px) */
+    @media (max-width: 767px) {
+        .header {
+            padding: 0 1rem;
+            height: 60px;
+        }
+        
+        .header__logo {
+            left: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .header__nav ul {
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        body {
+            padding-top: 60px;
+        }
+        
+        .hero {
+            padding: 3rem 1rem 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+        
+        .container {
+            padding: 0 1rem 3rem;
+        }
+        
+        .ateliers-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .atelier-card {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .atelier-icon {
+            margin: 0 auto 1rem;
+        }
+        
+        .atelier-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .atelier-card ul {
+            text-align: left;
+            margin: 1rem 0;
+        }
+        
+        .btn {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        
+        .inscription-form {
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .inscription-form h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        .form-group input,
+        .form-group select {
+            padding: 1rem;
+        }
+    }
+
+    /* Mobile petit (jusqu'à 575px) */
+    @media (max-width: 575px) {
+        .header__nav ul {
+            gap: 0.5rem;
+            font-size: 0.8rem;
+        }
+        
+        .hero {
+            padding: 2rem 0.8rem 1.5rem;
+        }
+        
+        .hero h1 {
+            font-size: 1.6rem;
+        }
+        
+        .container {
+            padding: 0 0.8rem 2rem;
+        }
+        
+        .atelier-card {
+            padding: 1.2rem;
+        }
+        
+        .atelier-icon {
+            width: 45px;
+            height: 45px;
+            font-size: 1.2rem;
+        }
+        
+        .atelier-date {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+        }
+        
+        .atelier-card h3 {
+            font-size: 1.1rem;
+        }
+        
+        .atelier-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .atelier-card ul {
+            font-size: 0.85rem;
+        }
+        
+        .inscription-form {
+            padding: 1.2rem;
+        }
+        
+        .inscription-form h2 {
+            font-size: 1.3rem;
+        }
+        
+        .btn {
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .footer {
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    /* Amélioration pour les très petits écrans (320px) */
+    @media (max-width: 374px) {
+        .header__logo span {
+            display: none;
+        }
+        
+        .header__nav ul {
+            gap: 0.3rem;
+            font-size: 0.75rem;
+        }
+        
+        .hero h1 {
+            font-size: 1.4rem;
+        }
+        
+        .atelier-card {
+            padding: 1rem;
+        }
+        
+        .atelier-card h3 {
+            font-size: 1rem;
+        }
+        
+        .inscription-form h2 {
+            font-size: 1.2rem;
+        }
+    }
