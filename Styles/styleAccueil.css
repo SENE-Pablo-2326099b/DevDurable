@@ -1,12 +1,14 @@
 :root {
-  --primary: #A6A6A6;
+  --primary: #A8BFA2;
   --secondary: #FFFCEB;
   --accent: #4CAF50;
-  --neutral: #FFFCEB;
-  --warm: #A6A6A6;
+  --neutral: #FFFFFF;
+  --warm: #A8BFA2;
   --text: #2E2E2E;
   --white: #FFFFFF;
   --green: #4CAF50;
+  --logo-green: #A8BFA2;
+  --gray-accent: #A6A6A6;
   --btn-radius: 24px;
 }
 
@@ -25,7 +27,7 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: var(--white);
+  background: var(--logo-green);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   display: flex;
   align-items: center;
@@ -196,8 +198,8 @@ body {
 }
 
 .btn--primary {
-  background: var(--white);
-  color: var(--primary);
+  background: var(--logo-green);
+  color: var(--white);
 }
 
 .btn--primary:hover {
@@ -207,13 +209,13 @@ body {
 
 .btn--secondary {
   background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+  color: var(--logo-green);
+  border: 2px solid var(--logo-green);
 }
 
 .btn--secondary:hover {
-  background: var(--white);
-  color: var(--primary);
+  background: var(--logo-green);
+  color: var(--white);
 }
 
 .section {
@@ -602,6 +604,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   transition: all 0.3s ease;
+  border: 2px solid var(--logo-green);
 }
 
 .product-card:hover {
@@ -611,7 +614,7 @@ body {
 
 .product-image {
   height: 200px;
-  background: var(--warm);
+  background: var(--logo-green);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -650,7 +653,7 @@ body {
 
 .old-price {
   text-decoration: line-through;
-  color: #999;
+  color: var(--gray-accent);
 }
 
 .new-price {
