@@ -10,13 +10,9 @@
     </style>
 </head>
 <body>
-    <!-- Header uniforme -->
     <header class="header" role="banner">
         <div class="header__logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-                <circle cx="16" cy="16" r="14" fill="#2E7D32"/>
-                <text x="16" y="21" text-anchor="middle" font-size="14" fill="#fff" font-family="Arial">RE</text>
-            </svg>
+            <img src="../Images/logo.png" alt="Logo Les P'tits Écolos">
             <span>Les P'tits Écolos</span>
         </div>
         <button class="header__burger" aria-label="Menu" aria-expanded="false">
@@ -34,13 +30,12 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="products-hero">
         <h1>Boutique Solidaire</h1>
         <p>Électroménager reconditionné à prix accessible. Chaque achat soutient l'économie circulaire et aide des familles en difficulté.</p>
     </section>
 
-    <!-- Filtres de catégories -->
+    <!-- Pour filtrer les produits -->
     <section class="filters">
         <div class="filters__container">
             <span class="filters__label">Acheter par besoin :</span>
@@ -72,7 +67,8 @@
     </section>
 
     <div class="container">
-        <!-- Statistiques -->
+        <!-- Pour Ajouter des statistiques, apparement ça fait 
+        plus sérieux sur les sites mdr-->
         <section class="stats">
             <div class="stat-card">
                 <div class="stat-number">500+</div>
@@ -94,11 +90,11 @@
 
         <!-- Grille de produits -->
         <section class="products-grid">
-            <!-- Cuisine -->
+            <!-- Kouiisine -->
             <div class="product-card" data-category="cuisine" data-tags="solidaire eco">
                 <div class="product__banner">Prix solidaire</div>
                 <div class="product__image">
-                    <img src="../assets/iphone.jpg" alt="Cafetière Senseo reconditionnée">
+                    <img src="/assets/Cafetiere.jpg" alt="Cafetière Senseo reconditionnée">
                 </div>
                 <div class="product__content">
                     <div class="product__category">CUISINE</div>
@@ -120,7 +116,6 @@
                 </div>
             </div>
 
-            <!-- Cuisine -->
             <div class="product-card" data-category="cuisine" data-tags="eco garantie">
                 <div class="product__banner">Éco-responsable</div>
                 <div class="product__image">
@@ -172,7 +167,6 @@
                 </div>
             </div>
 
-            <!-- Entretien -->
             <div class="product-card" data-category="entretien" data-tags="eco garantie">
                 <div class="product__banner">Garantie étendue</div>
                 <div class="product__image">
@@ -224,7 +218,6 @@
                 </div>
             </div>
 
-            <!-- Chauffage -->
             <div class="product-card" data-category="chauffage" data-tags="eco garantie">
                 <div class="product__banner">Éco-responsable</div>
                 <div class="product__image">
@@ -252,7 +245,7 @@
         </section>
     </div>
 
-    <!-- Section Newsletter -->
+    <!-- Pour s'inscrire à une newsletter -->
     <section class="newsletter">
         <h2>Restez informé des arrivages</h2>
         <p>Inscrivez-vous à notre infolettre pour être alerté des nouveaux produits reconditionnés et des promotions solidaires.</p>
@@ -262,12 +255,10 @@
         </form>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Ressourcerie Éco-Électro. Ensemble pour une consommation solidaire et durable.</p>
+        <p>&copy; 2024 Ressourcerie Éco-Électro. | Tous droits réservés.</p>
     </footer>
 
-    <!-- Script inline supprimé (fonctionnalités centralisées dans ../JS/products.js) -->
     <script src="../JS/navigation.js"></script>
     <script src="../JS/products.js"></script>
 </body>

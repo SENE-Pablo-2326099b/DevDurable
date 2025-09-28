@@ -1,7 +1,3 @@
-// ========================================
-// JAVASCRIPT SPÉCIFIQUE POUR LA PAGE BOUTIQUE
-// ========================================
-
 document.addEventListener('DOMContentLoaded', function() {
     // Sécurité : vérifier la présence de la grille produits
     const productSection = document.querySelector('.products-grid');
@@ -9,10 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('[products.js] Aucune section .products-grid trouvée — script arrêté.');
         return;
     }
-    
-    // ========================================
-    // FILTRAGE DES PRODUITS
-    // ========================================
     
     // Éléments de filtrage
     const besoinCards = document.querySelectorAll('.besoin-card');
@@ -95,10 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========================================
-    // ANIMATIONS AU SCROLL
-    // ========================================
-    
     // Observer pour les animations d'entrée
     const observerOptions = {
         threshold: 0.1,
@@ -119,10 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.stat-card, .product-card, .besoin-card, .filters__container').forEach(el => {
         animationObserver.observe(el);
     });
-    
-    // ========================================
-    // EFFETS INTERACTIFS
-    // ========================================
     
     // Effet de survol amélioré sur les produits
     productCards.forEach(product => {
@@ -156,10 +140,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // ========================================
-    // COMPTEURS ANIMÉS
-    // ========================================
     
     function animateCounters() {
         document.querySelectorAll('.stat-number').forEach(counter => {
@@ -205,11 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.stats').forEach(stats => {
         counterObserver.observe(stats);
     });
-    
-    // ========================================
-    // RECHERCHE INSTANTANÉE
-    // ========================================
-    
+
     // Ajouter une barre de recherche si elle n'existe pas
     const filtersContainer = document.querySelector('.filters__container');
     if (filtersContainer && !document.querySelector('.search-input')) {
@@ -244,11 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
-    // ========================================
-    // BOUTONS D'ACTION
-    // ========================================
-    
+
     // Gestion des boutons "Réserver"
     document.querySelectorAll('.btn btn--details, .btn--details').forEach(btn => { // tolère erreurs markup
         if (!btn) return;
@@ -308,9 +280,6 @@ document.addEventListener('DOMContentLoaded', function() {
         style.textContent = '@keyframes particleUp { to { transform: translate(var(--random-x, 0), -100px); opacity: 0; } }';
         document.head.appendChild(style);
     }
-    
     // Lancement initial du filtrage pour appliquer l'état par défaut
     filterProducts();
-
-    console.log('[products.js] Initialisation terminée. Produits:', productCards.length, 'Catégorie active:', activeCategory);
 });

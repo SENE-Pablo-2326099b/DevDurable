@@ -1,12 +1,6 @@
-// ========================================
-// JAVASCRIPT SPÉCIFIQUE POUR LA PAGE ATELIERS
-// ========================================
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // ========================================
-    // ANIMATIONS AU SCROLL
-    // ========================================
     
     // Observer pour les animations d'entrée
     const observerOptions = {
@@ -33,10 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         animationObserver.observe(el);
     });
     
-    // ========================================
-    // EFFETS INTERACTIFS SUR LES CARTES
-    // ========================================
-    
+
     // Effet de survol amélioré sur les cartes d'atelier
     document.querySelectorAll('.atelier-card').forEach((card, index) => {
         const icon = card.querySelector('.atelier-icon');
@@ -80,11 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'translateY(0)';
         }, index * 200);
     });
-    
-    // ========================================
-    // GESTION DU FORMULAIRE D'INSCRIPTION
-    // ========================================
-    
+
     const inscriptionForm = document.querySelector('.inscription-form form');
     
     if (inscriptionForm) {
@@ -193,9 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // SYSTÈME DE FAVORIS POUR LES ATELIERS
-    // ========================================
     
     // Ajouter des boutons favoris aux cartes
     document.querySelectorAll('.atelier-card').forEach(card => {
@@ -240,10 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========================================
-    // FILTRES POUR LES ATELIERS
-    // ========================================
-    
+
     // Créer une barre de filtres
     const heroSection = document.querySelector('.hero');
     if (heroSection) {
@@ -292,9 +273,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // FONCTIONS UTILITAIRES D'ANIMATION
-    // ========================================
     
     // Créer des confettis
     function createConfetti() {
@@ -350,10 +328,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1500);
         }
     }
-    
-    // ========================================
-    // AJOUT DES STYLES CSS
-    // ========================================
     
     const style = document.createElement('style');
     style.textContent = `
@@ -500,11 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-    
-    // ========================================
-    // INITIALISATION FINALE
-    // ========================================
-    
+
     // Ajouter des attributs data-type aux cartes si pas présents
     document.querySelectorAll('.atelier-card').forEach((card, index) => {
         if (!card.dataset.type) {
@@ -512,6 +482,4 @@ document.addEventListener('DOMContentLoaded', function() {
             card.dataset.type = types[index % types.length];
         }
     });
-    
-    console.log('🔧 JavaScript spécifique Ateliers chargé avec succès !');
 });

@@ -283,7 +283,6 @@
         }
     }
 
-    /* Styles pour les formulaires avec validation */
     .form-group input.error,
     .form-group textarea.error,
     .form-group select.error {
@@ -305,14 +304,9 @@
         75% { transform: translateX(5px); }
     }
 
-    /* Effet de parallaxe */
     .ateliers-hero {
         transition: transform 0.1s ease-out;
     }
-
-    /* ========================================
-       RESPONSIVE DESIGN COMPLET
-       ======================================== */
 
     /* Très grandes écrans (1440px et plus) */
     @media (min-width: 1440px) {

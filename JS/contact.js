@@ -1,13 +1,5 @@
-// ========================================
-// JAVASCRIPT SPÉCIFIQUE POUR LA PAGE CONTACT
-// ========================================
-
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // ========================================
-    // ANIMATIONS AU SCROLL
-    // ========================================
-    
+
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -33,11 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `).forEach(el => {
         animationObserver.observe(el);
     });
-    
-    // ========================================
-    // GESTION AVANCÉE DU FORMULAIRE
-    // ========================================
-    
+
     const contactForm = document.querySelector('.contact-form form');
     
     if (contactForm) {
@@ -228,10 +216,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // EFFETS INTERACTIFS SUR LES CARTES
-    // ========================================
-    
     // Animation des éléments d'information
     document.querySelectorAll('.info-item').forEach((item, index) => {
         item.addEventListener('mouseenter', function() {
@@ -286,10 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========================================
-    // HORAIRES INTERACTIFS
-    // ========================================
-    
     // Mise en évidence de l'horaire actuel
     function highlightCurrentTime() {
         const now = new Date();
@@ -311,11 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // CARTE INTERACTIVE (simulation)
-    // ========================================
-    
-    // Ajouter une carte interactive simulée
+    // Ajouter une carte interactive simulée (En vraie ça tue :p)
     const contactInfo = document.querySelector('.contact-info');
     if (contactInfo) {
         const mapHTML = `
@@ -341,10 +317,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 3000);
         }
     }
-    
-    // ========================================
-    // FONCTIONS UTILITAIRES
-    // ========================================
     
     function createSuccessParticles() {
         const colors = ['var(--primary)', 'var(--secondary)', 'var(--accent)'];
@@ -377,10 +349,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.openMaps = function() {
         window.open('https://www.google.fr/maps/place/13120+Gardanne/@43.4585656,5.4444691,13z/data=!3m1!4b1!4m6!3m5!1s0x12c9917b2992420d:0x40819a5fd970300!8m2!3d43.4525982!4d5.4717363!16s%2Fm%2F02r1_hd?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D', '_blank');
     };
-    
-    // ========================================
-    // STYLES CSS DYNAMIQUES
-    // ========================================
     
     const style = document.createElement('style');
     style.textContent = `
@@ -492,11 +460,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-    
-    // ========================================
-    // INITIALISATION
-    // ========================================
-    
     // Mettre en évidence l'horaire actuel
     highlightCurrentTime();
     
@@ -507,6 +470,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         updateCharacterCount(textarea);
     });
-    
-    console.log('📞 JavaScript spécifique Contact chargé avec succès !');
 });

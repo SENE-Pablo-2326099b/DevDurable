@@ -1,7 +1,3 @@
-/* ========================================
-   VARIABLES GLOBALES (réparées)
-   Le bloc :root précédent était corrompu : mélange de CSS et variables.
-   ======================================== */
 :root {
     --primary: #2E7D32;         /* Vert principal */
     --secondary: #4CAF50;       /* Variation vert */
@@ -16,9 +12,7 @@
     --btn-radius: 24px;         /* Rayon générique boutons */
 }
 
-/* ========================================
-   HERO BOUTIQUE
-   ======================================== */
+
 .products-hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
@@ -175,7 +169,7 @@ body {
             font-size: 1.2rem;
             width: 100%;
         }
-    }/* (Ancien bloc hero supprimé car dupliqué et corrompu) */
+    }
 
 /* Filtres */
 .filters {
@@ -471,8 +465,8 @@ body {
 }
 
 .btn--primary {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--white);
+    color: var(--primary);
 }
 
 .btn--primary:hover {
@@ -496,9 +490,9 @@ body {
 .newsletter {
     background: var(--primary);
     color: var(--white);
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 /* Barre de recherche (centralisée ici plutôt qu'injectée en JS) */
@@ -549,12 +543,16 @@ body {
 }
 
 /* Footer */
-.footer {
-    background: var(--text);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem;
-}
+    .footer {
+        background: var(--primary);
+        color: var(--white);
+        text-align: center;
+        padding: 2rem;   
+    }
+    .footer p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
 
 /* Animations JavaScript */
 @keyframes float {
@@ -617,11 +615,9 @@ body {
 .boutique-hero {
     transition: transform 0.1s ease-out;
 }
+        
 
-/* ========================================
-   RESPONSIVE DESIGN COMPLET
-   ======================================== */
-
+/* Responsive */
 /* Très grandes écrans (1440px et plus) */
 @media (min-width: 1440px) {
     .container {

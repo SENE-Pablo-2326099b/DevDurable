@@ -1,11 +1,10 @@
-/* Variables harmonisées - Palette écologique */
 :root {
-    --primary: #2E7D32;     /* Vert foncé principal */
-    --secondary: #4CAF50;   /* Vert clair */
-    --accent: #81C784;      /* Vert doux */
-    --neutral: #F5F5F5;     /* Gris très clair */
-    --warm: #D7CCC8;        /* Beige chaleureux */
-    --text: #2E2E2E;        /* Gris foncé */
+    --primary: #2E7D32;   
+    --secondary: #4CAF50;
+    --accent: #81C784;
+    --neutral: #F5F5F5;
+    --warm: #D7CCC8;
+    --text: #2E2E2E;
     --white: #FFFFFF;
     --btn-radius: 24px;
 }
@@ -138,7 +137,6 @@ body {
         }
     }
 
-/* Hero contact harmonisé */
 .contact-hero {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     color: var(--white);
@@ -476,9 +474,7 @@ body {
     }
 }
 
-/* ========================================
-   RESPONSIVE DESIGN COMPLET
-   ======================================== */
+/*  Responsive */
 
 /* Très grandes écrans (1440px et plus) */
 @media (min-width: 1440px) {

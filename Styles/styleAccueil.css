@@ -1,11 +1,10 @@
-/* Variables harmonisées - Palette écologique */
 :root {
-  --primary: #2E7D32;     /* Vert foncé principal */
-  --secondary: #4CAF50;   /* Vert clair */
-  --accent: #81C784;      /* Vert doux */
-  --neutral: #F5F5F5;     /* Gris très clair */
-  --warm: #D7CCC8;        /* Beige chaleureux */
-  --text: #2E2E2E;        /* Gris foncé */
+  --primary: #2E7D32;
+  --secondary: #4CAF50;
+  --accent: #81C784;
+  --neutral: #F5F5F5;
+  --warm: #D7CCC8;
+  --text: #2E2E2E;
   --white: #FFFFFF;
   --btn-radius: 24px;
 }
@@ -19,7 +18,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header uniforme comme products.html */
 .header {
   position: fixed;
   top: 0;
@@ -35,6 +33,13 @@ body {
   padding: 0 2rem;
 }
 
+.footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
 .header__logo {
   position: absolute;
   left: 2rem;
@@ -138,7 +143,6 @@ body {
         }
     }
 
-/* Hero harmonisé avec taille standard */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: var(--white);
@@ -172,7 +176,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Boutons harmonisés */
 .btn {
   padding: 0.8rem 2rem;
   border: none;
@@ -207,7 +210,6 @@ body {
   color: var(--primary);
 }
 
-/* Sections harmonisées */
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -375,7 +377,6 @@ body {
     }
 }
 
-/* Styles pour les formulaires avec validation */
 .form-group input.error,
 .form-group textarea.error,
 .form-group select.error {
@@ -402,9 +403,7 @@ body {
     transition: transform 0.1s ease-out;
 }
 
-/* ========================================
-   RESPONSIVE DESIGN COMPLET
-   ======================================== */
+/*      Responsive */
 
 /* Très grandes écrans (1440px et plus) */
 @media (min-width: 1440px) {

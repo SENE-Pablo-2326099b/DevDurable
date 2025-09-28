@@ -1,12 +1,7 @@
-// ========================================
-// JAVASCRIPT SPÉCIFIQUE POUR LA PAGE D'ACCUEIL
-// ========================================
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // ========================================
-    // ANIMATIONS SPÉCIALES DU HERO
-    // ========================================
+
     
     const hero = document.querySelector('.hero');
     const heroTitle = hero?.querySelector('h1');
@@ -34,9 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
     }
     
-    // ========================================
-    // ANIMATIONS DES CARTES MISSIONS
-    // ========================================
+
     
     const missionCards = document.querySelectorAll('.mission-card');
     
@@ -80,9 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========================================
-    // ANIMATIONS DES PRODUITS VEDETTES
-    // ========================================
     
     const productCards = document.querySelectorAll('.product');
     
@@ -116,9 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ========================================
-    // COMPTEURS ANIMÉS POUR LES STATISTIQUES
-    // ========================================
     
     function animateNumbers() {
         // Créer des statistiques si elles n'existent pas
@@ -185,10 +172,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // EFFET PARALLAXE AVANCÉ
-    // ========================================
-    
     let ticking = false;
     
     function updateParallax() {
@@ -218,9 +201,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', requestTick);
     
-    // ========================================
-    // NEWSLETTER INTERACTIVE
-    // ========================================
     
     const newsletterForm = document.querySelector('.cta__form');
     if (newsletterForm) {
@@ -275,10 +255,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ========================================
-    // PARTICULES FLOTTANTES DANS LE HERO
-    // ========================================
-    
     function createHeroParticles() {
         if (!hero) return;
         
@@ -300,10 +276,6 @@ document.addEventListener('DOMContentLoaded', function() {
             hero.appendChild(particle);
         }
     }
-    
-    // ========================================
-    // FONCTIONS UTILITAIRES
-    // ========================================
     
     function createConfetti(element) {
         const rect = element.getBoundingClientRect();
@@ -332,10 +304,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1500);
         }
     }
-    
-    // ========================================
-    // STYLES CSS DYNAMIQUES
-    // ========================================
     
     const style = document.createElement('style');
     style.textContent = `
@@ -451,15 +419,9 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
     
-    // ========================================
-    // INITIALISATION
-    // ========================================
-    
-    // Créer les particules du hero
+    // Ca va créer les particules pour le hero
     createHeroParticles();
     
-    // Initialiser les statistiques
+    // faire les statistiques
     animateNumbers();
-    
-    console.log('🏠 JavaScript spécifique Accueil chargé avec succès !');
-});
+    });
