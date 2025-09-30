@@ -1,16 +1,15 @@
 :root {
-    --primary: #A6A6A6;         /* Gris principal du logo */
-    --secondary: #FFFCEB;       /* Crème du logo */
-    --accent: #4CAF50;          /* Vert écologique */
-    --eco: #4CAF50;             /* Tag éco */
-    --solidarity: #4CAF50;      /* Tag solidaire */
-    --neutral: #FFFCEB;         /* Fond neutre clair */
-    --bg: #FFFCEB;              /* Fond général */
-    --warm: #A6A6A6;            /* Ton chaud secondaire */
-    --text: #2E2E2E;            /* Couleur texte */
-    --white: #FFFFFF;           /* Blanc */
-    --green: #4CAF50;           /* Vert écologique */
-    --btn-radius: 24px;         /* Rayon générique boutons */
+  --primary: #A8BFA2;
+  --secondary: #FFFCEB;
+  --accent: #4CAF50;
+  --neutral: #FFFFFF;
+  --warm: #A8BFA2;
+  --text: #2E2E2E;
+  --white: #FFFFFF;
+  --green: #4CAF50;
+  --logo-green: #A8BFA2;
+  --gray-accent: #A6A6A6;
+  --btn-radius: 24px;
 }
 
 

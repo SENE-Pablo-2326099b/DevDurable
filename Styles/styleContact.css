@@ -1,15 +1,16 @@
 :root {
-    --primary: #A6A6A6;   
-    --secondary: #FFFCEB;
-    --accent: #4CAF50;
-    --neutral: #FFFCEB;
-    --warm: #A6A6A6;
-    --text: #2E2E2E;
-    --white: #FFFFFF;
-    --green: #4CAF50;
-    --btn-radius: 24px;
+  --primary: #A8BFA2;
+  --secondary: #FFFCEB;
+  --accent: #4CAF50;
+  --neutral: #FFFFFF;
+  --warm: #A8BFA2;
+  --text: #2E2E2E;
+  --white: #FFFFFF;
+  --green: #4CAF50;
+  --logo-green: #A8BFA2;
+  --gray-accent: #A6A6A6;
+  --btn-radius: 24px;
 }
-
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     margin: 0;
