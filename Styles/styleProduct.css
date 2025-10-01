@@ -581,17 +581,7 @@ body {
     }
 }
 
-/* Animation manquante utilisée par .animate-reveal (JS) */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* Removed JS-linked keyframes to keep CSS minimal */
 
 .filter-animate {
     animation: filterIn 0.5s ease-out forwards;

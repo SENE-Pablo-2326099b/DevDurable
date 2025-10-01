@@ -725,10 +725,7 @@ body {
     75% { transform: translateX(5px); }
 }
 
-/* Effet de parallaxe */
-.hero, .contact-hero, .ateliers-hero, .boutique-hero {
-    transition: transform 0.1s ease-out;
-}
+/* Parallax removed (handled via CSS only when needed) */
 
 /*      Responsive */
 
