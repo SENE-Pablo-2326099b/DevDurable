@@ -208,14 +208,18 @@ body {
 }
 
 .btn--secondary {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid var(--white);
+    justify-content: center;
+    border: 2px solid var(--primary);
+    background: var(--white);
+    color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn--secondary:hover {
-  background: var(--white);
-  color: var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .section {
@@ -599,6 +603,8 @@ body {
 }
 
 .product-card {
+  justify-content: center;
+  align-items: center;
   background: var(--neutral);
   border-radius: 16px;
   overflow: hidden;
@@ -624,8 +630,8 @@ body {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: var(--secondary);
-  color: var(--white);
+  background: var(--primary);
+  color: var(--secondary);
   padding: 0.3rem 0.8rem;
   border-radius: 12px;
   font-size: 0.8rem;
