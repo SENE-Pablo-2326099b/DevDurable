@@ -277,7 +277,7 @@ body {
 .besoin-card.active {
     background: linear-gradient(135deg, var(--neutral) 0%, var(--warm) 100%);
     border-color: var(--primary);
-    color: var(--primary);
+    color: var(--white);
     transform: translateY(-4px);
 }
 
@@ -322,7 +322,7 @@ body {
     font-weight: 500;
 }
 
-/* Grille de produits - Responsive */
+/* Grille des produit pour le Responsive */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
