@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     // Si besoin, afficher les produits
     const productCards = document.querySelectorAll('.product');
     productCards.forEach(product => {

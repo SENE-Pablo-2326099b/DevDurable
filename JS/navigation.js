@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.header__burger');
     const nav = document.querySelector('.header__nav ul');
     if (!burger || !nav) return;

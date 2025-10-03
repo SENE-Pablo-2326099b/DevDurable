@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+﻿document.addEventListener('DOMContentLoaded', function() {
     // Filtrage des ateliers
     const filterButtons = document.querySelectorAll('.filter-atelier');
     const atelierCards = document.querySelectorAll('.atelier-card');

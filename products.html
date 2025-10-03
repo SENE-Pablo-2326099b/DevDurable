@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="products-hero">
         <h1>La boutique qui remet la vie en marche</h1>
         <p>Appareils reconditionnés, testés et vendus à prix malin. Achetez responsable, aidez local — et souriez en économisant.</p>
@@ -67,7 +66,6 @@
     </section>
 
     <div class="container">
-        <!-- Statistiques -->
         <section class="stats">
             <div class="stat-card">
                 <div class="stat-number">500+</div>
@@ -87,7 +85,6 @@
             </div>
         </section>
 
-        <!-- Grille de produits -->
         <section class="products-grid">
             <!-- Cuisine -->
             <div class="product-card" data-category="cuisine" data-tags="solidaire eco">
@@ -115,7 +112,6 @@
                 </div>
             </div>
 
-            <!-- Cuisine -->
             <div class="product-card" data-category="cuisine" data-tags="eco garantie">
                 <div class="product__banner">Éco-responsable</div>
                 <div class="product__image">
@@ -141,7 +137,6 @@
                 </div>
             </div>
 
-            <!-- Entretien -->
             <div class="product-card" data-category="entretien" data-tags="solidaire">
                 <div class="product__banner">Prix solidaire</div>
                 <div class="product__image">
@@ -167,7 +162,6 @@
                 </div>
             </div>
 
-            <!-- Entretien -->
             <div class="product-card" data-category="entretien" data-tags="eco garantie">
                 <div class="product__banner">Garantie étendue</div>
                 <div class="product__image">
@@ -193,7 +187,6 @@
                 </div>
             </div>
 
-            <!-- Chauffage -->
             <div class="product-card" data-category="chauffage" data-tags="solidaire eco">
                 <div class="product__banner">Prix solidaire</div>
                 <div class="product__image">
@@ -219,7 +212,6 @@
                 </div>
             </div>
 
-            <!-- Chauffage -->
             <div class="product-card" data-category="chauffage" data-tags="eco garantie">
                 <div class="product__banner">Éco-responsable</div>
                 <div class="product__image">
@@ -247,7 +239,37 @@
         </section>
     </div>
 
-    <!-- Section Newsletter -->
+        <div id="reserveModal" class="modal" aria-hidden="true">
+            <div class="modal__overlay" data-close></div>
+            <div class="modal__content" role="dialog" aria-modal="true" aria-labelledby="reserveTitle">
+                <button class="modal-close" aria-label="Fermer">×</button>
+                <h3 id="reserveTitle">Réserver : <span id="reserveProductName"></span></h3>
+                <form id="reserveForm">
+                    <input type="hidden" name="product" id="reserveProductInput">
+                    <div class="form-group">
+                        <label for="res-name">Nom complet *</label>
+                        <input id="res-name" name="name" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-email">Email *</label>
+                        <input id="res-email" name="email" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-qty">Numéro de téléphone *</label>
+                        <input id="res-qty" name="quantity" type="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-note">Remarque</label>
+                        <textarea id="res-note" name="note" rows="3" placeholder="Ex: Retrait en boutique..."></textarea>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="submit" class="btn btn--primary">Envoyer la réservation</button>
+                        <button type="button" class="btn modal-cancel" data-close>Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     <footer class="footer">
         <h2>Restez informé des arrivages</h2>
         <p>Inscrivez-vous à notre infolettre pour être alerté des nouveaux produits reconditionnés et des promotions solidaires.</p>
