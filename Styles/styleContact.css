@@ -11,6 +11,7 @@
   --gray-accent: #A6A6A6;
   --btn-radius: 24px;
 }
+
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     margin: 0;
@@ -22,16 +23,16 @@ body {
 
 /* Header uniforme */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120px;
-    background: var(--white);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: var(--logo-green);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
     z-index: 100;
     padding: 0 2rem;
 }
@@ -70,7 +71,7 @@ body {
 
     .header__nav a:hover,
     .header__nav .active a {
-        color: var(--primary);
+        color: var(--white);
     }
 
     /* Menu burger pour mobile */
@@ -304,8 +305,8 @@ body {
 }
 
 .btn--primary:hover {
-    background: var(--primary);
-    transform: translateY(-2px);
+    background: var(--secondary);
+--primaryrm: translateY(-2px);
     box-shadow: 0 6px 20px rgba(46, 125, 50, 0.2);
 }
 
